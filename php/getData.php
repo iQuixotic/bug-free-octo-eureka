@@ -2,7 +2,7 @@
     require_once $_SERVER['DOCUMENT_ROOT'] . '/employee_cards/php/connection.php';
     require_once $_SERVER['DOCUMENT_ROOT'] . '/employee_cards/php/Employee.php';
     
-    /* $mysql is ready */
+/* $mysql is ready */
 $id = $_GET['id'];
 $query = "SELECT * FROM employees WHERE id = $id";
 $result = mysqli_query($mysqli, $query);

@@ -9,3 +9,24 @@
     padding: 15px;
     border: 1px solid gray;
 }
+
+/* Employee Info */
+#emp_id {
+    color: red;
+}
+
+#emp_name {
+    color: greenyellow;    
+}
+
+#emp_position {
+    color: green;    
+}
+
+#emp_phone {
+    color: purple;
+}
+
+#emp_email {
+    color: darkblue;
+}

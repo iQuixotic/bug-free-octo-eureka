@@ -13,13 +13,16 @@
 
         <h1 class='nav_area'>Employees</h1>
         <div class="container">
+            <div id="emp_id"></div>
             <!-- Content of card -->
             <div class="content-block">
                 <h2 class="company-name"></h2>        
-                <div id="employee-name"></div>
+                <div id="emp_name"></div>
+                <div id="emp_position"></div>
+                
                 <div class="contact_block">
-                    <div class="contact_info">Phone: <span id="phone"></span></div>
-                    <div class="contact_info">Email: <span id="email"></span></div>
+                    <div class="contact_info">Phone: <span id="emp_phone"></span></div>
+                    <div class="contact_info">Email: <span id="emp_email"></span></div>
                 </div>
             </div>
             <!-- Dropdown here -->
@@ -27,12 +30,33 @@
                 <button id='EMP-dropdown' class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Dropdown button
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <!-- <a id='EMP-dropdown-option' class="dropdown-item" href="#">Action</a> -->
-                </div>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"></div>
             </div>       
-
         </div>
+
+
+        <!-- here's round 2 -->
+        <!-- <div class="container">
+                <div id="emp_id"></div>
+                <!-- Content of card --
+                <div class="content-block">
+                    <h2 class="company-name"></h2>        
+                    <div id="emp_name"></div>
+                    <div id="emp_position"></div>
+                    
+                    <div class="contact_block">
+                        <div class="contact_info">Phone: <span id="emp_phone"></span></div>
+                        <div class="contact_info">Email: <span id="emp_email"></span></div>
+                    </div>
+                </div>
+                <!-- Dropdown here --
+                <div class="dropdown">
+                    <button id='EMP-dropdown' class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown button
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"></div>
+                </div>       
+            </div> -->
         
     </body>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
