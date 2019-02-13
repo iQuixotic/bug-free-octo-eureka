@@ -3,7 +3,7 @@
     require_once $_SERVER['DOCUMENT_ROOT'] . '/employee_cards/php/Employee.php';
     
     /* $mysql is ready */
-$query = "SELECT * FROM employees WHERE id = $data->id";
+$query = "SELECT * FROM employees";
 $result = mysqli_query($mysqli, $query);
 
 $rows = array();
@@ -11,10 +11,7 @@ $rows = array();
 while($row = mysqli_fetch_assoc($result)) {
     $rows[] = array(
     'id' => $row['id'], 
-    'name' => $row['name'], 
-    'position' => $row['position'],
-    'phone' => $row['phone'],
-    'email' => $row['email']
+    'name' => $row['name']
     );
 }    
 
