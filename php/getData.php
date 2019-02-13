@@ -1,18 +1,28 @@
 <?php
     require_once $_SERVER['DOCUMENT_ROOT'] . '/employee_cards/php/connection.php';
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/employee_cards/php/Employee.php';
     
     /* $mysql is ready */
-echo 'php';
+
+$query = "SELECT * FROM employees";
+// WHERE id = '" . $_POST["id"] . "'";
+$result = mysqli_query($mysqli, $query);
+
+while($row = mysqli_fetch_assoc($result)) {
+    $arr = array(
+        $data['id'] => $row['id'];
+        $data['name'] = $row['name'];
+    );
+    echo json_encode($arr);
+}    
 
 
-    // $sqlGet = "SELECT * FROM employees";
-    // $result = mysqli_query($mysqli, $sqlGet);
-    
-    
+
+// function getEmployeeById($id) {
     // while($row = mysqli_fetch_assoc($result)) {
-    //     $myEmp = new stdClass();
-    //     $myEmp->id = $row['id'];
-    //     $myEmp->name = $row['name'];
-    //     $myEmp->position = $row['position'];
-    //     $myEmp->phone = $row['phone'];
-    //     echo json_encode(" . $myEmp . ");
+    //     $data['id'] = $row['id'];
+    //     $data['name'] = $row['name'];
+    //     $data['position'] = $row['position'];
+    //     $data['phone']  = $row['phone'];
+    // }
+// }

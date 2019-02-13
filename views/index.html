@@ -10,23 +10,28 @@
         <link rel="stylesheet" type="text/css" href="./public/css/style.css">
     </head>
     <body>
+
+        <h1 class='nav_area'>Employees</h1>
         <div class="container">
-            <h1 class='nav_area'>Employees</h1>
-            <h2 class="company-name"></h2>        
-            <div id="employee-name"></div>
-            <div class="contact_block">
-                <div class="contact_info">Phone: <span id="phone"></span></div>
-                <div class="contact_info">Email: <span id="email"></span></div>
+            <!-- Content of card -->
+            <div class="content-block">
+                <h2 class="company-name"></h2>        
+                <div id="employee-name"></div>
+                <div class="contact_block">
+                    <div class="contact_info">Phone: <span id="phone"></span></div>
+                    <div class="contact_info">Email: <span id="email"></span></div>
+                </div>
             </div>
-    
+            <!-- Dropdown here -->
             <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button id='EMP-dropdown' class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Dropdown button
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Action</a>
+                    <!-- <a id='EMP-dropdown-option' class="dropdown-item" href="#">Action</a> -->
                 </div>
-            </div>        
+            </div>       
+
         </div>
         
     </body>
