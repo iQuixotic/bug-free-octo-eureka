@@ -1,5 +1,4 @@
 $(document).ready(() => {
-   
 
 $.ajax({
     url: 'http://localhost/employee_cards/php/getNames.php',
@@ -46,5 +45,4 @@ $.ajax({
     });
     
 });
-    
     

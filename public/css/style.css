@@ -1,3 +1,14 @@
+.shrink {
+    width: 600px;
+}
+
+.padd-left {
+    padding-left: 50px !important;
+}
+
+
+
+
 .nav_area {
     text-align: center;
     border-bottom: 1px solid gray;
@@ -50,4 +61,24 @@
     display: flex;
     color: gray;
     letter-spacing: 8px;
+}
+
+/*  - - - - - - - - - - - - Business Card - - - - - - - - - - - - - -  */
+
+.company-name-block {
+    height: 150px;
+}
+
+.company-name {
+    position: relative;
+    z-index: 1;
+    right: 35px;
+}
+
+.logo img {
+    position: relative;
+    left: 87%;
+    float: right;
+    width: 75px;
+    height: 75px;
 }
